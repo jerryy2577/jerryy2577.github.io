@@ -1,37 +1,368 @@
-{% extends '_layout.swig' %}
-{% import '_macro/post.swig' as post_template %}
-{% import '_macro/sidebar.swig' as sidebar_template %}
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 7.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
 
 
-{% block title %}{{ page.title }} | {{ config.title }}{% endblock %}
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
 
-{% block page_class %}page-post-detail{% endblock %}
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"jerryy2577.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="京东免费上车地址: https:&#x2F;&#x2F;jdc.52hym666.top&#x2F;                    0、特别提醒：为了保障您账号的安全，请设置支付密码并目关闭免密支付！！！  1、东东农场：完成后只兑换不下单，可兑得无门槛红包(Level 4 的水果价值50元)。适用于京东、京喜和京东极速版APP；  2、东东萌宠：完成后只兑换不下单，可兑得20元无门槛红包。适用于京东APP；  3、京">
+<meta property="og:type" content="article">
+<meta property="og:title" content="京东车">
+<meta property="og:url" content="https://jerryy2577.github.io/2024/07/26/hello-world/index.html">
+<meta property="og:site_name" content="免费京东代挂">
+<meta property="og:description" content="京东免费上车地址: https:&#x2F;&#x2F;jdc.52hym666.top&#x2F;                    0、特别提醒：为了保障您账号的安全，请设置支付密码并目关闭免密支付！！！  1、东东农场：完成后只兑换不下单，可兑得无门槛红包(Level 4 的水果价值50元)。适用于京东、京喜和京东极速版APP；  2、东东萌宠：完成后只兑换不下单，可兑得20元无门槛红包。适用于京东APP；  3、京">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2024-07-26T08:36:34.299Z">
+<meta property="article:modified_time" content="2024-07-26T09:21:25.678Z">
+<meta property="article:author" content="Jerry">
+<meta property="article:tag" content="JD,京东,呆瓜,京豆,红包,羊毛,JS,代挂,免费,稳定,推送,脚本,京东车,短信车,Pro,">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://jerryy2577.github.io/2024/07/26/hello-world/">
 
 
-{% block content %}
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
 
-  <div id="posts" class="posts-expand">
-    {{ post_template.render(page) }}
+  <title>京东车 | 免费京东代挂</title>
+  
 
-    <div class="post-spread">
-      {% if theme.jiathis %}
-        {% include '_partials/share/jiathis.swig' %}
-      {% elseif theme.baidushare %}
-        {% include '_partials/share/baidushare.swig' %}
-      {% elseif theme.add_this_id %}
-        {% include '_partials/share/add-this.swig' %}
-      {% elseif theme.duoshuo_shortname and theme.duoshuo_share %}
-        {% include '_partials/share/duoshuo_share.swig' %}
-      {% endif %}
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
     </div>
   </div>
 
-{% endblock %}
+  <div class="site-meta">
 
-{% block sidebar %}
-  {{ sidebar_template.render(true) }}
-{% endblock %}
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">免费京东代挂</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">JD呆瓜网/免费代挂/稳定好用/短信登录/一对一推送</p>
+  </div>
 
-{% block script_extra %}
-  {% include '_scripts/pages/post-details.swig' %}
-{% endblock %}
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://jerryy2577.github.io/2024/07/26/hello-world/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Jerry">
+      <meta itemprop="description" content="JD呆瓜网/免费代挂/稳定好用/短信登录/一对一推送">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="免费京东代挂">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          京东车
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2024-07-26 16:36:34 / 修改时间：17:21:25" itemprop="dateCreated datePublished" datetime="2024-07-26T16:36:34+08:00">2024-07-26</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h2 id="京东免费上车地址-https-jdc-52hym666-top"><a href="#京东免费上车地址-https-jdc-52hym666-top" class="headerlink" title="京东免费上车地址: https://jdc.52hym666.top/"></a>京东免费上车地址: <a target="_blank" rel="noopener" href="https://jdc.52hym666.top/">https://jdc.52hym666.top/</a></h2><div class="modal-body">
+                 <div class="alert alert-success" id="notice"><div style="text-align:left;">  0、<span style="color:#E53333;"><strong>特别提醒：</strong></span>为了保障您账号的安全，请设置支付密码并目关闭免密支付！！！</div><div style="text-align:left;">  1、<span style="color:#E53333;"><strong>东东农场：</strong></span>完成后只兑换不下单，可兑得无门槛红包(Level 4 的水果价值50元)。适用于京东、京喜和京东极速版APP；</div><div style="text-align:left;">  2、<span style="color:#E53333;"><strong>东东萌宠：</strong></span>完成后只兑换不下单，可兑得20元无门槛红包。适用于京东APP；</div><div style="text-align:left;">  3、<span style="color:#E53333;"><strong>京喜工厂：</strong></span>产品生产完成后，须在有效期内完成兑换，逾期作废；</div><div style="text-align:left;">  4、<span style="color:#E53333;"><strong>京喜购物：</strong></span>参加他人发起的团购，可立即成团，卖家发货较快。自行发起团购需拼团成功或等卖家处理后才发货；</div><div style="text-align:left;">  5、<span style="color:#E53333;"><strong>京喜红包：</strong></span>有效期为48小时，请及时使用；</div><div style="text-align:left;">  6、<span style="color:#E53333;"><strong>东东健康社区：</strong></span>常有1元好物，比如口罩、维生素等等；</div><div style="text-align:left;">  7、<span style="color:#E53333;"><strong>京东赚赚红包：</strong></span>每月1号0点抢，仅适用于京东APP；</div><div style="text-align:left;">  8、<span style="color:#E53333;"><strong>京东极速版金币：</strong></span>建议累计金额达50元或100元兑换无门槛红包，仅适用于京东极速版 APP；</div><div style="text-align:left;">  9、<span style="color:#E53333;"><strong>京东APP-我的-优惠券：</strong></span>每天自动领取若干优惠券，以备不时之需。</div><div style="text-align:left;">  &nbsp; &nbsp; &nbsp; &nbsp; 注：①所有符号均为英文半角符号，无空格；</div><div style="text-align:left;">  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ②抓包时如果没有 pin ，可用 pt_pin 的值代替。</div></div>
+             </div>
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%AC%E4%B8%9C%E5%85%8D%E8%B4%B9%E4%B8%8A%E8%BD%A6%E5%9C%B0%E5%9D%80-https-jdc-52hym666-top"><span class="nav-number">1.</span> <span class="nav-text">京东免费上车地址: https:&#x2F;&#x2F;jdc.52hym666.top&#x2F;</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Jerry</p>
+  <div class="site-description" itemprop="description">JD呆瓜网/免费代挂/稳定好用/短信登录/一对一推送</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">1</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2024</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Jerry</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
